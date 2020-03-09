@@ -2,7 +2,7 @@
 
 **on_off_switcher** widget for Flutter project.
 
-![](darkmode_switcher.gif)
+![](on_off_switcher.gif)
 
 ## Getting Started
 
@@ -12,9 +12,9 @@ For use **on_off_switcher** widget in your project:
     dependencies:
         flutter:
             sdk: flutter
-        darkmode_switcher:
+        on_off_switcher:
             git:
-                url: git@github.com:shekunsky/FLUTTER-darkmode_switcher.git
+                url: git@github.com:shekunsky/FLUTTER-on_off_switcher.git
 ```
 
 2. Import widget in the dart file:
@@ -26,13 +26,13 @@ For use **on_off_switcher** widget in your project:
 3. Make an instance of the widget.
 
     ```dart
-         DarkModeSwitcher(
-                state: DarkModeSwitcherState.sun,
+         OnOffSwitcher(
+                state: OnOffSwitcherState.switchOn,
                 valueChanged: (state) {
-                  if (state == DarkModeSwitcherState.moon) {
-                    print('moon');
+                  if (state == OnOffSwitcherState.switchOn) {
+                    print('State is ON');
                   } else {
-                    print('sun');
+                    print('State is OFF');
                   }
                 },
               )
